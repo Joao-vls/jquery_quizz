@@ -125,6 +125,12 @@ nav ul li:hover{
 .sec p {
     color: #4d5b7c;
     margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+.sec ol li, ul li {
+    color: #4d5b7c;
+    margin-left: 2rem;
 }
 
 .sec-two {

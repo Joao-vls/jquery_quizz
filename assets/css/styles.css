@@ -5,7 +5,10 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
 
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -58,27 +61,40 @@ ul li:hover{
 
 }
 
-
 .welcome-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background: rgb(0, 105, 255) url('https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg') no-repeat right center / 300px;
-    height: 500px;
+    height: 600px;
     color: #fff;
     text-align: center;
 }
 
 .welcome h1 {
     font-size: 44px;
-    
-    
 }
 
 .welcome p {
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.welcome a {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: rgb(0, 105, 255);
+    font-weight: 700;
+    padding: 1rem 2rem;
+}
+
+.welcome a:hover {
+    opacity: 0.7;
 }
 
 .container {

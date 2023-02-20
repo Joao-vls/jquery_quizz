@@ -41,21 +41,21 @@ nav {
     margin-left: 1rem;
 }
 
-ul li {
+nav ul li {
     display: inline-block;
     list-style-type: none;
     margin: 1rem 0;
     padding: 0.4rem;
 }
 
-li a {
+nav li a {
     text-decoration: none;
     color: rgb(36, 51, 90);
     font-weight: 400;
     font-size: 1.1rem
 }
 
-ul li:hover{
+nav ul li:hover{
     background-color: rgb(227, 232, 244);
     border-radius: 8px;
 
@@ -124,6 +124,7 @@ ul li:hover{
 
 .sec p {
     color: #4d5b7c;
+    margin-bottom: 0.5rem;
 }
 
 .sec-two {

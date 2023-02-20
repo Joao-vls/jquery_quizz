@@ -99,13 +99,31 @@ ul li:hover{
 
 .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     max-width: 1280px;
     margin: 0 auto; 
 }
 
 .sec {
-    height: 500px;
+    max-width: 870px;
+}
+
+.sec h2{
+    font-size: 2.5rem;
+    color: rgb(8, 27, 75);
+    margin-top: 4rem;
+}
+
+.sec h3{
+    color: rgb(8, 27, 75);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sec p {
+    color: #4d5b7c;
 }
 
 .sec-two {

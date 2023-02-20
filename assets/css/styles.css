@@ -135,10 +135,39 @@ nav ul li:hover{
     font-size: 0.95rem;
 }
 
+
 .sec-two {
-    height: 500px;
-    background-color: rgb(244, 245, 249);
+    background-color: rgb(249, 250, 254);
+    height: 700px;
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 105, 255);
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    padding: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.footer a i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+    transition: all 0.1s;
+}
+
+
 
 /*max-width: 1280px;
     margin: 0 auto;*/

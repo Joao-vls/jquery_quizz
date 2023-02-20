@@ -107,6 +107,7 @@ nav ul li:hover{
 
 .sec {
     max-width: 870px;
+    margin-bottom: 2rem;
 }
 
 .sec h2{
@@ -131,6 +132,7 @@ nav ul li:hover{
 .sec ol li, ul li {
     color: #4d5b7c;
     margin-left: 2rem;
+    font-size: 0.95rem;
 }
 
 .sec-two {

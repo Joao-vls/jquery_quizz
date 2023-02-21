@@ -40,7 +40,6 @@ nav {
 
 }
 
-
 .logo {
     margin-top: 0.30rem;
 }
@@ -55,7 +54,6 @@ nav {
 nav ul li {
     margin: 1rem 0;
     padding: 0.4rem;
-
 }
 
 nav li a {
@@ -69,7 +67,6 @@ nav li a {
 nav ul li:hover{
     background-color: rgb(227, 232, 244);
     border-radius: 8px;
-
 }
 
 
@@ -182,7 +179,7 @@ nav ul li:hover{
 
 @media (max-width: 526px) {
 
-      #menu {
+    #menu {
         display: block;
         position: absolute;
         width: 100%;
@@ -195,6 +192,7 @@ nav ul li:hover{
         visibility: hidden;
         overflow-y: hidden;
     }
+
     #nav.active #menu {
         height: calc(100vh - 90px);
         visibility: visible;
@@ -202,10 +200,9 @@ nav ul li:hover{
     }
 
     #menu li a {
-       display: inline-block;
-       padding:1rem;
-       margin: 0 2rem; 
-    
+        display: inline-block;
+        padding:1rem;
+        margin: 0 2rem; 
     }
 
     #btn-mobile {
@@ -237,8 +234,9 @@ nav ul li:hover{
     }
 
     #nav.active #hamburguer {
-      border-top-color: transparent;
+        border-top-color: transparent;
     }
+
     #nav.active #hamburguer::before {
         transform: rotate(135deg);
     }

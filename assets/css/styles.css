@@ -51,12 +51,12 @@ nav {
 }
 
 
-nav ul li {
+#menu ul li {
     margin: 1rem 0;
     padding: 0.4rem;
 }
 
-nav li a {
+#menu li a {
     text-decoration: none;
     color: rgb(36, 51, 90);
     font-weight: 400;
@@ -64,7 +64,7 @@ nav li a {
 
 }
 
-nav ul li:hover{
+#menu ul li:hover{
     background-color: rgb(227, 232, 244);
     border-radius: 8px;
 }

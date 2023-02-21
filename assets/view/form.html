@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery - Home</title>
-    <script src="./assets/jquery/jquery-3.6.2.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <title>Jquery - Jogar</title>
+    <script src="../jquery/jquery-3.6.2.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="../css/styles.css" />
@@ -16,17 +15,22 @@
 
 <body>
     <header>
-        <nav>
-            <a href="#" class="logo">
-                <img src="../img/jquery-horizontal.svg">
-            </a>
-            <div class="menu">
-                <ul>
-                    <li><a href="../../index.html">Home </a> </li>
-                    <li><a href="#">Pagina2 </a> </li>
-                    <li><a href="#">Pagina3 </a></li>
-                </ul>
-            </div>
+        <a href="../../index.html" class="logo">
+            <img src="../img/jquery-horizontal.svg">
+        </a>
+
+        <nav id="nav">
+
+            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a href="../../index.html">Home </a> </li>
+                <li><a href="#">Quiz </a> </li>
+                <li><a href="#">Pagina3 </a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -51,6 +55,7 @@
             </a>
         </div>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

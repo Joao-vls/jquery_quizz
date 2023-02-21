@@ -17,6 +17,9 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -27,25 +30,32 @@ header {
     box-shadow: rgb(0 12 43 / 5%) 0px 4px 8px;
 }
 
+#btn-mobile {
+    display:none;
+}
+
 nav {
     display: flex;
     align-items: center;
 
 }
 
+
 .logo {
     margin-top: 0.30rem;
 }
 
-.menu {
-    margin-left: 1rem;
+#menu {
+    display: flex;
+    list-style-type: none;
+    margin-right: 2rem;
 }
 
+
 nav ul li {
-    display: inline-block;
-    list-style-type: none;
     margin: 1rem 0;
     padding: 0.4rem;
+
 }
 
 nav li a {
@@ -53,6 +63,7 @@ nav li a {
     color: rgb(36, 51, 90);
     font-weight: 400;
     font-size: 1.1rem
+
 }
 
 nav ul li:hover{
@@ -60,6 +71,7 @@ nav ul li:hover{
     border-radius: 8px;
 
 }
+
 
 .welcome-container {
     display: flex;
@@ -168,7 +180,73 @@ nav ul li:hover{
 }
 
 
+@media (max-width: 526px) {
 
-/*max-width: 1280px;
-    margin: 0 auto;*/
+      #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        right: 0;
+        height: 0;
+        transition: all 0.6s;
+        background-color: #FFF;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #nav.active #menu {
+        height: calc(100vh - 90px);
+        visibility: visible;
+        
+    }
+
+    #menu li a {
+       display: inline-block;
+       padding:1rem;
+       margin: 0 2rem; 
+    
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem
+    }
+
+    #hamburguer {
+        color: rgb(36, 51, 90);
+        border-top: solid 2px ;
+        width: 20px;
+        transition: all .1s ease-in-out;
+    }
+
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: all .3s ease-in-out;
+        position: relative;
+    }
+
+    #nav.active #hamburguer {
+      border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
+}
 

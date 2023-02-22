@@ -1,0 +1,23 @@
+{
+  "name": "jquery_quizz",
+  "version": "1.0.0",
+  "description": "trabalho em grupo da disciplina de desenvolvimento web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "backend": "npx json-server --watch db.json --port 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joao-vls/jquery_quizz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joao-vls/jquery_quizz/issues"
+  },
+  "homepage": "https://github.com/Joao-vls/jquery_quizz#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}

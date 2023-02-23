@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-
+    width: 100%;
 }
 
 header {
@@ -69,6 +69,13 @@ nav ul li:hover{
     border-radius: 8px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+    width: 100%;
+}
 
 .welcome-container {
     display: flex;
@@ -76,9 +83,13 @@ nav ul li:hover{
     align-items: center;
     justify-content: center;
     background: rgb(0, 105, 255) url('https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg') no-repeat right center / 300px;
-    height: 600px;
+    height: 100vh;
     color: #fff;
     text-align: center;
+}
+
+.welcome {
+    height: 50%;
 }
 
 .welcome h1 {
@@ -115,7 +126,7 @@ nav ul li:hover{
 }
 
 .sec {
-    max-width: 870px;
+    max-width: 80%;
     margin-bottom: 2rem;
 }
 
@@ -144,10 +155,32 @@ nav ul li:hover{
     font-size: 0.95rem;
 }
 
+#learn-more {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    height: 15rem;
+}
+
+#learn-more a {
+    border: none;
+    background-color: rgb(0, 105, 255);
+    color: #f8f8f2;
+    
+    font-weight: 400;
+    font-size: 18px;
+}
+
+#learn-more i {
+    color: #f8f8f2;
+
+    animation: animate 2s linear infinite;
+}
 
 .sec-two {
     background-color: rgb(249, 250, 254);
-    height: 700px;
+    margin: 1% 0 10%;
 }
 
 .footer {
@@ -158,6 +191,10 @@ nav ul li:hover{
     align-items: center;
     color:#fff;
     padding: 1rem;
+}
+
+.footer div {
+    display: flex;
 }
 
 .footer a {
@@ -177,7 +214,7 @@ nav ul li:hover{
 }
 
 
-@media (max-width: 526px) {
+@media screen and (max-width: 700px) {
 
     #menu {
         display: block;
@@ -194,7 +231,7 @@ nav ul li:hover{
     }
 
     #nav.active #menu {
-        height: calc(100vh - 90px);
+        height: 17rem;
         visibility: visible;
         
     }
@@ -246,5 +283,40 @@ nav ul li:hover{
         top: -7px;
     }
 
+    .sec {
+        max-width: 95%;
+    }
+
+    .sec h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+
 }
 
+@media screen and (max-width: 350px) {
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    #learn-more {
+        height: 7.5rem;
+    }
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}

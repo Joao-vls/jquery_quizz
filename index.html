@@ -1,293 +1,336 @@
 <!DOCTYPE html>
 <html lang="br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery - Home</title>
-    <script src="./assets/jquery/jquery-3.6.2.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery - Home</title>
+        <script src="./assets/jQuery/jQuery-3.6.2.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
 
-<body>
-    <header>
-
-        <a href="#" class="logo">
-            <img src="./assets/img/jquery-horizontal.svg">
-        </a>
-
-        <nav id="nav">
-            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu" role="menu">
-                <li><a href="#">Home </a> </li>
-                <li><a href="#">Quiz </a> </li>
-                <li><a href="#">Pagina3 </a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="welcome-container">
-            <div class="welcome">
-                <h1>Bem vindo(a) ao Jquery Quiz</h1>
-                <p>Aqui você vai aprender tudo o que precisa sobre jquery.</p>
-                <div>
-                    <a href="./assets/view/form.html"> Clique aqui </a>
-                </div>
-            </div>
-        </section>
-        <section class="sec container">
-            <div>
-                <h2>Resumo sobre Jquery</h2>
-            </div>
-            <div>
-                <h3>Histórico do framework</h3>
-                <p>Na segunda metade dos anos 2000, o Facebook abria as portas para o mundo e, no Brasil, o Orkut e suas
-                    comunidades criativas estavam entre os principais meios de comunicação na internet — ao lado do MSN,
-                    Fotolog e Flogão.
-
-                    A web ainda caminhava em direção ao que temos acesso hoje em dia, novas tecnologias de
-                    desenvolvimento surgiram e a demanda por soluções se tornou cada vez mais necessária. O
-                    desenvolvimento web era feito por quem era, de fato, apaixonado pela programação e as coisas
-                    aconteciam por meio de erros e acertos.
-
-                    Naquela época muita coisa foi ao ar de forma totalmente experimental e inovadora.
-
-                    É nesse cenário de experimentações que surge o jQuery, em 2006 — mesmo ano em que o Facebook foi
-                    colocado ao mundo — criação de John Resig, um jovem programador, na época com seus 22 anos,
-                    graduando do Instituto de Tecnologia de Rochester.
-
-                </p>
-            </div>
-            <div>
-                <h3>Popularidade</h3>
-                <p>O surgimento dessa nova biblioteca JavaScript revolucionou o desenvolvimento web e transformou a
-                    forma como as pessoas codavam em JavaScript.
-
-                    Durante dez anos o jQuery dominou o desenvolvimento JS. Saber programar com essa biblioteca era
-                    requisito em quase todas as empresas e um grande diferencial no currículo. Escolas e cursos de
-                    programação focavam os esforços no aprendizado e domínio de suas funções.
-
-                    O jQuery chegou a fazer parte de mais de 80% da web, uma vez que, no final da década, mesmo ainda
-                    expressivo, esse número diminuiu significativamente.
-
-                    Uma das coisas que podem explicar isso é o surgimento e impulsão de tecnologias mais práticas e
-                    modernas — como React, Vue ou Angular — e alinhadas com as novas demandas do mercado de trabalho,
-                    por parte de iniciativas emergentes na web.
-                </p>
-            </div>
-            <div>
-                <h3>Funcionamento</h3>
-                <p><b>Objetivo</b> - A principal proposta de sua nova biblioteca de códigos era básica: mudar a maneira
-                    em que escrevemos JavaScript — de preferência para algo mais divertido, prático, atraente e,
-                    consequentemente, mais produtivo.
-                    Criar códigos pode ser um pouco cansativo, especialmente quando isso envolve muitas strings. A
-                    jQuery compacta várias linhas de código em uma única função. Assim, você não precisa reescrever
-                    todos os blocos repetidamente para concluir sua tarefa.
-
-                    O primeiro registro que temos, na verdade, foi feito em 2005, em seu blog pessoal, quando o jQuery
-                    era sequer um projeto. Descontente com o formato do behaviour.js — biblioteca JavaScript utilizada
-                    nos anos 2000 — começou a mexer em alguns aspectos do layout que achava “tedioso, feio e assustador
-                    para programadores casuais”. No ano seguinte apresentou o jQuerry completo em Nova Iorque e
-                    “derrubou” o uso do Behaviour, apesar de usar a mesma base de funções.*
-                    Em uma entrevista para o canal Khan Academy Computing, Resig comenta que o jQuery surgiu pela
-                    vontade de “ter certas ferramentas e utilidades para tornar meu desenvolvimento mais fácil, e parte
-                    disso era trabalhar sobre as incompatibilidades que existiam entre os browsers da época”.
-
-                    E, de fato, este era um dos problemas da programação web no início. Não era muito prático programar
-                    simultaneamente entre os navegadores disponíveis na internet, entre eles o Explorer e o Firefox.
-
-                    Além disso, o fato de que a maioria das bibliotecas de códigos da época não eram nada práticas e
-                    informativas, era um sofrimento, um grande perrengue programar em JavaScript pela falta de
-                    ferramentas facilitadoras.
-
-                    Somando essa série de frustrações com o conhecimento de Resig em programação, a solução encontrada
-                    foi a criação de uma biblioteca completa e acessível — um arquivo open source de 10 kB chamado de
-                    jQuery. Hoje a biblioteca é mantida pela Fundação Query, com ajuda e participação de centenas de
-                    voluntários.
-                </p>
-
-                <p><b>Arquitetura ou padrão de projeto</b> - Compatível com a instalação de plug-ins e extensões;
-                    O jQuery utiliza diversos Design Patterns em seu núcleo e solicita ao desenvolvedor que seu uso seja
-                    facilitado através dos métodos que ela oferece. O Composite Pattern, por exemplo, é um desses
-                    padrões e está exposto ao programador através do próprio núcleo do jQuery.
-
-                </p>
-
-                <p><b>Ferramentas necessárias para seu funcionamento</b> - Antes de descobrir como usar o jQuery, é
-                    importante que você tenha um conhecimento bastante sólido de HTML e CSS. Também deve saber
-                    configurar um site simples e o que são seletores CSS, como ids e classes. Além disso, conhecimento
-                    em JS é essencial, principalmente variáveis ​​e tipos de dados.
-                    jQuery pode ser usado de duas maneiras principais, uma delas baseada em como inserir jQuery no HTML:
-                    instalação local: baixe a biblioteca jQuery em sua máquina local e inclua-a em seu código HTML;
-                    versão baseada em CDN: você pode incluir a biblioteca jQuery em seu código HTML diretamente de uma
-                    rede de distribuição de conteúdo.
-
-
-                </p>
-
-                <p> <b>Diferenciais</b>
-
-                </p>
-
-                <ul>
-                    <li>No suporte total ao CSS3 que permite o uso de seletores para localizar
-                        elementos de marcação no HTML da página.
-                    </li>
-                    <li>Em sua arquitetura compatível com a instalação de plug-ins e extensões</li>
-                    <li>Na extensibilidade que permite a adição de novas funcionalidades</li>
-                    <li>E na integração com o Ajax e linguagens que permitem buscar informações em um servidor remoto
-                        sem
-                        que seja necessário recarregar a página</li>
-                </ul>
-
-            </div>
-            <div>
-                <h3>Vantagens e Desvantagens</h3>
-                <p><b>Vantagens:</b></p>
-                <ol>
-                    <li>Programação simultânea entre os navegadores mais usados.</li>
-                    <li>Simplificação do Ajax com uma API mais fácil de usar.</li>
-                    <li>Manipulação da DOM (Document Object Model) com mais facilidade.</li>
-                    <li>Criação de animações.</li>
-                    <li> Muito mais leve, rápido e atraente se comparado com as bibliotecas antigas.</li>
-                    <li>Caso precise trabalhar com o DOM, o uso do jQuery pode ajudar, já que sua API é mais elegante
-                        e
-                        simples do que o JavaScript puro.</li>
-                    <li>Caso esteja criando um projeto pequeno, como um site simples, não fará sentido usar um
-                        framework
-                        poderoso. Se for trabalhar com muitas funções das quais o jQuery possua, ele pode ser um belo
-                        aliado
-                        para se escrever menos código.</li>
-                    <li>Outra vantagem é sua simplicidade. Normalmente a maioria dos desenvolvedores novatos
-                        conseguem
-                        aprender a usar jQuery mais rapidamente do que outros frameworks ou a API do DOM. Assim, eles já
-                        conseguem criar efeitos, animações, requisições e lidar com eventos.</li>
-                    <li>Há muitos plugins e ferramentas que usam jQuery. É comum encontrar boas soluções para algumas
-                        situações e, nesses casos, o jQuery acaba sendo uma dependência obrigatória. Mas, se possível,
-                        prefira procurar algo independente de jQuery para não ter que incluí-lo apenas por causa de uma
-                        funcionalidade.</li>
-                    <li>O jQuery era muito apreciado por normalizar as diferenças de funcionalidades que existiam
-                        entre
-                        navegadores. Então, caso ainda precise dar suporte a navegadores mais antigos, o jQuery pode ser
-                        uma
-                        boa pedida.</li>
-                    <li>Por ser simples e direto ao ponto, pode ser perfeito caso esteja apenas precisando criar um
-                        protótipo rápido. Eu adoro tentar fazer várias coisas com CSS puro e evitar o máximo de
-                        JavaScript,
-                        mas tenho que admitir que animações e efeitos com jQuery são bem mais rápidos e simples de se
-                        escrever.</li>
-                </ol>
-                <p><b>Desvantagens:</b>
-                </p>
-
-                <ol>
-                    <li>Muitos dizem que a tecnologia está morrendo ou já morreu.</li>
-                    <li>Não é a tecnologia mais usada como React, Node, Spring.</li>
-                    <li>Hoje em dia temos várias funcionalidades do jQuery no próprio JavaScript e as animações são
-                        melhores
-                        quando feitas com CSS3. Caso só precise dar suporte aos navegadores modernos, provavelmente não
-                        precisará do jQuery.</li>
-                    <li>
-                        Não é bom ficar acessando o DOM diretamente. Caso precise atualizar muito as informações na
-                        tela,
-                        exibir muitas informações ou acessar o DOM frequentemente, prefira um framework ao invés de usar
-                        jQuery ou JavaScript puro, pois eles já são otimizados para se trabalhar com templates,
-                        acessando o
-                        DOM o mínimo possível. Há também bibliotecas leves que servem apenas para criar componentes com
-                        uma
-                        ótima performance.
-                    </li>
-                    <li>
-                        O jQuery tem como principal objetivo facilitar o uso de funcionalidades simples do JavaScript
-                        (“write less, do more”). Porém, em muitas aplicações será muito comum a necessidade de
-                        funcionalidades mais complexas como: roteamento, componentização, formatação, modularização,
-                        validações, etc. Nesses casos, para realmente escrever menos, você provavelmente precisará de um
-                        framework, o qual terá tantas funcionalidades que dispensará o uso de jQuery.
-                    </li>
-
-                    <li>
-                        Ao escrever várias funcionalidades com jQuery, é muito comum misturar HTML no meio do
-                        JavaScript,
-                        dentro de funções. O uso de frameworks modernos nos ajuda a separar e manter o código mais
-                        organizado.
-                    </li>
-                    <li>
-                        Em aplicações grandes, você terá muito mais trabalho para gerenciar cada pedaço do que cada
-                        código faz. Com jQuery, muitas funcionalidades serão escritas por você, enquanto que com um
-                        framework, muitas coisas já estarão prontas e testadas. Tem pessoas que tem medo de frameworks
-                        com
-                        muita “mágica”, porém, se você souber como usar estas “mágicas” a seu favor, você desenvolverá
-                        muito
-                        mais rápido e sem erros. As próprias linguagens de programação são “mágicas” em certas
-                        funcionalidades. Nós simplesmente aprendemos a utilizá-las ao invés de ficar pensando em como
-                        cada
-                        bit de informação será processado.
-                    </li>
-                    <li>
-                        O site <a href="http://youmightnotneedjquery.com/"> you might not need jquery</a> possui uma
-                        grande lista de funcionalidades do jQuery
-                        e
-                        como fazer o mesmo com JavaScript puro. Várias funcionalidades são simples de aprender, e as
-                        mais
-                        complexas você pode encapsular em uma função, evitando ter que incluir a biblioteca inteira caso
-                        precise apenas de uma ou outra, apenas.
-                    </li>
-                </ol>
-
-                <p>
-                    Além de tornar a programação mais rápida e eficiente, a biblioteca jQuery simplifica uma variedade
-                    de operações de programação. O jQuery ui tem código aberto, o que significa que qualquer pessoa pode
-                    contribuir ou modificá-lo, conquistando uma grande comunidade de usuários.
-
-                    Por isso, se você está decidindo se vale a pena começar a estudar jQuery, saiba que haverá diversas
-                    pessoas para dar suporte caso você tenha dúvidas.
-
-                    Por fim, jQuery tem uma extensa documentação de métodos, que funciona em qualquer outra biblioteca
-                    JavaScript que você possa usar, e milhares de plugins que permitem estender a funcionalidade do
-                    jQuery.
-                </p>
-
-            </div>
-            <div>
-                <h3>Sugestões de cursos</h3>
-                <p><b>Pagos - </b>
-                    Alura por 12X de R$85 todos os cursos,
-                    Udemy por 34,90. Curso completo,
-                    TreinaWeb por 12X de R$75 todos os cursos,
-                    DevMedia por 12X de R$58 todos os cursos,
-                    MxCursos por 12X de 9,70 todos os cursos.
-                </p>
-                <p><b>Gratuitos - </b>
-                    JornadaDoDev,
-                    Udemy,
-                    Portalgsti,
-                    cursa.app,
-                    YouTube.
-
-                </p>
-            </div>
-
-
-        </section>
-        <section class="sec-two">
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <p>Desenvolvido por Alexandre, João Victor, João Leite, Harisson, Davidson</p>
-            <a href="https://github.com/Joao-vls/jquery_quizz" target="_blank">Link do repositório
-                <i class="fab fa-github"></i>
+    <body>
+        <header>
+            <a href="#" class="logo">
+                <img src="./assets/img/jQuery-horizontal.svg">
             </a>
-        </div>
-    </footer>
-    <script src="./assets/js/script.js"></script>
-</body>
+
+            <nav id="nav">
+                <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">
+                    <span id="hamburguer"></span>
+                </button>
+
+                <ul id="menu" role="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Quizz</a></li>
+                    <li><a href="#">Pagina3</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="welcome-container">
+                <div class="welcome">
+                    <h1>Bem vindo(a) ao jQuery Quiz</h1>
+                    <p>Aqui você vai aprender tudo o que precisa sobre jQuery.</p>
+                    <div>
+                        <a href="./assets/view/form.html"> Iniciar o jQuerry Quizz </a>
+                    </div>
+                    <div id="learn-more">
+                        <a href="#learn-more-jquery">
+                            <small>Leia mais sobre o jQuerry</small>
+                            <div>
+                                <i class="fa-solid fa-angles-down fa-1x"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="learn-more-jquery" class="sec container">
+                <div>
+                    <h2>Resumo sobre jQuery</h2>
+                </div>
+                <div>
+                    <h3>Histórico do framework</h3>
+                    <p>Na segunda metade dos anos 2000, o Facebook abria as portas para o mundo e, no Brasil, o Orkut e
+                        suas
+                        comunidades criativas estavam entre os principais meios de comunicação na internet — ao lado do
+                        MSN,
+                        Fotolog e Flogão.
+
+                        A web ainda caminhava em direção ao que temos acesso hoje em dia, novas tecnologias de
+                        desenvolvimento surgiram e a demanda por soluções se tornou cada vez mais necessária. O
+                        desenvolvimento web era feito por quem era, de fato, apaixonado pela programação e as coisas
+                        aconteciam por meio de erros e acertos.
+
+                        Naquela época muita coisa foi ao ar de forma totalmente experimental e inovadora.
+
+                        É nesse cenário de experimentações que surge o jQuery, em 2006 — mesmo ano em que o Facebook foi
+                        colocado ao mundo — criação de John Resig, um jovem programador, na época com seus 22 anos,
+                        graduando do Instituto de Tecnologia de Rochester.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Popularidade</h3>
+                    <p>O surgimento dessa nova biblioteca JavaScript revolucionou o desenvolvimento web e transformou a
+                        forma como as pessoas codavam em JavaScript.
+
+                        Durante dez anos o jQuery dominou o desenvolvimento JS. Saber programar com essa biblioteca era
+                        requisito em quase todas as empresas e um grande diferencial no currículo. Escolas e cursos de
+                        programação focavam os esforços no aprendizado e domínio de suas funções.
+
+                        O jQuery chegou a fazer parte de mais de 80% da web, uma vez que, no final da década, mesmo
+                        ainda
+                        expressivo, esse número diminuiu significativamente.
+
+                        Uma das coisas que podem explicar isso é o surgimento e impulsão de tecnologias mais práticas e
+                        modernas — como React, Vue ou Angular — e alinhadas com as novas demandas do mercado de
+                        trabalho,
+                        por parte de iniciativas emergentes na web.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Funcionamento</h3>
+                    <p><b>Objetivo</b> - A principal proposta de sua nova biblioteca de códigos era básica: mudar a
+                        maneira
+                        em que escrevemos JavaScript — de preferência para algo mais divertido, prático, atraente e,
+                        consequentemente, mais produtivo.
+                        Criar códigos pode ser um pouco cansativo, especialmente quando isso envolve muitas strings. A
+                        jQuery compacta várias linhas de código em uma única função. Assim, você não precisa reescrever
+                        todos os blocos repetidamente para concluir sua tarefa.
+
+                        O primeiro registro que temos, na verdade, foi feito em 2005, em seu blog pessoal, quando o
+                        jQuery
+                        era sequer um projeto. Descontente com o formato do behaviour.js — biblioteca JavaScript
+                        utilizada
+                        nos anos 2000 — começou a mexer em alguns aspectos do layout que achava “tedioso, feio e
+                        assustador
+                        para programadores casuais”. No ano seguinte apresentou o jQuerry completo em Nova Iorque e
+                        “derrubou” o uso do Behaviour, apesar de usar a mesma base de funções.*
+                        Em uma entrevista para o canal Khan Academy Computing, Resig comenta que o jQuery surgiu pela
+                        vontade de “ter certas ferramentas e utilidades para tornar meu desenvolvimento mais fácil, e
+                        parte
+                        disso era trabalhar sobre as incompatibilidades que existiam entre os browsers da época”.
+
+                        E, de fato, este era um dos problemas da programação web no início. Não era muito prático
+                        programar
+                        simultaneamente entre os navegadores disponíveis na internet, entre eles o Explorer e o Firefox.
+
+                        Além disso, o fato de que a maioria das bibliotecas de códigos da época não eram nada práticas e
+                        informativas, era um sofrimento, um grande perrengue programar em JavaScript pela falta de
+                        ferramentas facilitadoras.
+
+                        Somando essa série de frustrações com o conhecimento de Resig em programação, a solução
+                        encontrada
+                        foi a criação de uma biblioteca completa e acessível — um arquivo open source de 10 kB chamado
+                        de
+                        jQuery. Hoje a biblioteca é mantida pela Fundação Query, com ajuda e participação de centenas de
+                        voluntários.
+                    </p>
+
+                    <p><b>Arquitetura ou padrão de projeto</b> - Compatível com a instalação de plug-ins e extensões;
+                        O jQuery utiliza diversos Design Patterns em seu núcleo e solicita ao desenvolvedor que seu uso
+                        seja
+                        facilitado através dos métodos que ela oferece. O Composite Pattern, por exemplo, é um desses
+                        padrões e está exposto ao programador através do próprio núcleo do jQuery.
+                    </p>
+
+                    <p><b>Ferramentas necessárias para seu funcionamento</b> - Antes de descobrir como usar o jQuery, é
+                        importante que você tenha um conhecimento bastante sólido de HTML e CSS. Também deve saber
+                        configurar um site simples e o que são seletores CSS, como ids e classes. Além disso,
+                        conhecimento
+                        em JS é essencial, principalmente variáveis ​​e tipos de dados.
+                        jQuery pode ser usado de duas maneiras principais, uma delas baseada em como inserir jQuery no
+                        HTML:
+                        instalação local: baixe a biblioteca jQuery em sua máquina local e inclua-a em seu código HTML;
+                        versão baseada em CDN: você pode incluir a biblioteca jQuery em seu código HTML diretamente de
+                        uma
+                        rede de distribuição de conteúdo.
+                    </p>
+
+                    <p>
+                        <b>Diferenciais</b>
+                    </p>
+
+                    <ul>
+                        <li>
+                            No suporte total ao CSS3 que permite o uso de seletores para localizar
+                            elementos de marcação no HTML da página.
+                        </li>
+                        <li>Em sua arquitetura compatível com a instalação de plug-ins e extensões</li>
+                        <li>Na extensibilidade que permite a adição de novas funcionalidades</li>
+                        <li>
+                            E na integração com o Ajax e linguagens que permitem buscar informações em um servidor
+                            remoto sem que seja necessário recarregar a página
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Vantagens e Desvantagens</h3>
+                    <p><b>Vantagens:</b></p>
+                    <ol>
+                        <li>Programação simultânea entre os navegadores mais usados.</li>
+                        <li>Simplificação do Ajax com uma API mais fácil de usar.</li>
+                        <li>Manipulação da DOM (Document Object Model) com mais facilidade.</li>
+                        <li>Criação de animações.</li>
+                        <li> Muito mais leve, rápido e atraente se comparado com as bibliotecas antigas.</li>
+                        <li>
+                            Caso precise trabalhar com o DOM, o uso do jQuery pode ajudar, já que sua API é mais
+                            elegante e simples do que o JavaScript puro.
+                        </li>
+                        <li>
+                            Caso esteja criando um projeto pequeno, como um site simples, não fará sentido usar um
+                            framework poderoso. Se for trabalhar com muitas funções das quais o jQuery possua, 
+                            ele pode ser um belo aliado para se escrever menos código.
+                        </li>
+                        <li>Outra vantagem é sua simplicidade. Normalmente a maioria dos desenvolvedores novatos
+                            conseguem aprender a usar jQuery mais rapidamente do que outros frameworks ou a 
+                            API do DOM. Assim, eles já conseguem criar efeitos, animações, requisições e 
+                            lidar com eventos.
+                        </li>
+                        <li>Há muitos plugins e ferramentas que usam jQuery. É comum encontrar boas soluções para
+                            algumas situações e, nesses casos, o jQuery acaba sendo uma dependência obrigatória. 
+                            Mas, se possível, prefira procurar algo independente de jQuery para não ter que 
+                            incluí-lo apenas por causa de uma funcionalidade.
+                        </li>
+                        <li>O jQuery era muito apreciado por normalizar as diferenças de funcionalidades que 
+                            existiam entre navegadores. Então, caso ainda precise dar suporte a navegadores 
+                            mais antigos, o jQuery pode ser uma boa pedida.
+                        </li>
+                        <li>Por ser simples e direto ao ponto, pode ser perfeito caso esteja apenas precisando 
+                            criar um protótipo rápido. Eu adoro tentar fazer várias coisas com CSS puro e 
+                            evitar o máximo de JavaScript, mas tenho que admitir que animações e efeitos com 
+                            jQuery são bem mais rápidos e simples de se escrever.
+                        </li>
+                    </ol>
+
+                    <p>
+                        <b>Desvantagens:</b>
+                    </p>
+
+                    <ol>
+                        <li>Muitos dizem que a tecnologia está morrendo ou já morreu.</li>
+                        <li>Não é a tecnologia mais usada como React, Node, Spring.</li>
+                        <li>
+                            Hoje em dia temos várias funcionalidades do jQuery no próprio JavaScript e as 
+                            animações são melhores quando feitas com CSS3. Caso só precise dar suporte 
+                            aos navegadores modernos, provavelmente não precisará do jQuery.
+                        </li>
+                        <li>
+                            Não é bom ficar acessando o DOM diretamente. Caso precise atualizar muito as 
+                            informações na tela, exibir muitas informações ou acessar o DOM frequentemente, 
+                            prefira um framework ao invés de usar jQuery ou JavaScript puro, pois eles 
+                            já são otimizados para se trabalhar com templates, acessando o DOM o mínimo possível. 
+                            Há também bibliotecas leves que servem apenas para criar componentes com
+                            uma ótima performance.
+                        </li>
+                        <li>
+                            O jQuery tem como principal objetivo facilitar o uso de funcionalidades simples do
+                            JavaScript (“write less, do more”). Porém, em muitas aplicações será muito comum a 
+                            necessidade de funcionalidades mais complexas como: roteamento, componentização, 
+                            formatação, modularização, validações, etc. Nesses casos, para realmente escrever 
+                            menos, você provavelmente precisará de um framework, o qual terá tantas 
+                            funcionalidades que dispensará o uso de jQuery.
+                        </li>
+
+                        <li>
+                            Ao escrever várias funcionalidades com jQuery, é muito comum misturar HTML no meio do
+                            JavaScript,
+                            dentro de funções. O uso de frameworks modernos nos ajuda a separar e manter o código mais
+                            organizado.
+                        </li>
+                        <li>
+                            Em aplicações grandes, você terá muito mais trabalho para gerenciar cada pedaço do que cada
+                            código faz. Com jQuery, muitas funcionalidades serão escritas por você, enquanto que com um
+                            framework, muitas coisas já estarão prontas e testadas. Tem pessoas que tem medo de
+                            frameworks
+                            com
+                            muita “mágica”, porém, se você souber como usar estas “mágicas” a seu favor, você
+                            desenvolverá
+                            muito
+                            mais rápido e sem erros. As próprias linguagens de programação são “mágicas” em certas
+                            funcionalidades. Nós simplesmente aprendemos a utilizá-las ao invés de ficar pensando em
+                            como
+                            cada
+                            bit de informação será processado.
+                        </li>
+                        <li>
+                            O site <a href="http://youmightnotneedjQuery.com/"> you might not need jQuery</a> possui uma
+                            grande lista de funcionalidades do jQuery
+                            e
+                            como fazer o mesmo com JavaScript puro. Várias funcionalidades são simples de aprender, e as
+                            mais
+                            complexas você pode encapsular em uma função, evitando ter que incluir a biblioteca inteira
+                            caso
+                            precise apenas de uma ou outra, apenas.
+                        </li>
+                    </ol>
+
+                    <p>
+                        Além de tornar a programação mais rápida e eficiente, a biblioteca jQuery simplifica uma
+                        variedade
+                        de operações de programação. O jQuery ui tem código aberto, o que significa que qualquer pessoa
+                        pode
+                        contribuir ou modificá-lo, conquistando uma grande comunidade de usuários.
+
+                        Por isso, se você está decidindo se vale a pena começar a estudar jQuery, saiba que haverá
+                        diversas
+                        pessoas para dar suporte caso você tenha dúvidas.
+
+                        Por fim, jQuery tem uma extensa documentação de métodos, que funciona em qualquer outra
+                        biblioteca
+                        JavaScript que você possa usar, e milhares de plugins que permitem estender a funcionalidade do
+                        jQuery.
+                    </p>
+
+                </div>
+                <div>
+                    <h3>Sugestões de cursos</h3>
+                    <p><b>Pagos - </b>
+                        Alura por 12X de R$85 todos os cursos,
+                        Udemy por 34,90. Curso completo,
+                        TreinaWeb por 12X de R$75 todos os cursos,
+                        DevMedia por 12X de R$58 todos os cursos,
+                        MxCursos por 12X de 9,70 todos os cursos.
+                    </p>
+                    <p><b>Gratuitos - </b>
+                        JornadaDoDev,
+                        Udemy,
+                        Portalgsti,
+                        cursa.app,
+                        YouTube.
+
+                    </p>
+                </div>
+            </section>
+
+            <section class="sec-two" style="display: flex; justify-content: center; text-align: center;">
+                <code>
+                Aqui vem algum texto <br>
+                Em construção...
+            </code>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <p>Desenvolvido por Alexandre, João Victor, João Leite, Harisson, Davidson</p>
+                <div>
+                    <a href="https://github.com/Joao-vls/jquery_quizz" target="_blank">Link do repositório
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+            </div>
+        </footer>
+        <script src="./assets/js/script.js"></script>
+    </body>
 
 </html>

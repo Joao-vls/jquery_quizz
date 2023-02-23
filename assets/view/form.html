@@ -20,7 +20,6 @@
         </a>
 
         <nav id="nav">
-
             <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">
                 <span id="hamburguer"></span>
@@ -33,6 +32,7 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <section>
             <div class="wrapper">
@@ -40,9 +40,9 @@
                     <h3>Digite seu nome</h3>
                     <form>
                         <label>nickname</label>
-                        <input placeholder="nickname" type="text" name="nickname" required>
-                        <button>Jogar</button>
+                        <input placeholder="nickname" type="text" name="nickname" id="nickname" required>
                     </form>
+                    <button onclick="getUser()">Jogar</button>
                 </div>
             </div>
         </section>
@@ -56,6 +56,41 @@
         </div>
     </footer>
     <script src="../js/script.js"></script>
+    <script>
+        function getUser() {
+            const name = $("#nickname").val();
+            const data = {
+                            id: 4,
+                            name: name,
+                            score: 50
+                        }
+            $.post("http://localhost:5000/users", data)
+            /* fetch("http://localhost:5000/users", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+                })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Success:", data);
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+            console.log(JSON.stringify(data))
+
+            /* fetch("http://localhost:5000/users")
+                .then((res) => {
+                    return res.json()
+                })
+                .then((data) => {
+                    console.log(data)
+                }) */
+                
+        }
+    </script>
 </body>
 
 </html>

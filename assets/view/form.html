@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery - Jogar</title>
+    <title>jQuery - Jogar</title>
     <script src="../jquery/jquery-3.6.2.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
@@ -18,21 +18,21 @@
         <a href="../../index.html" class="logo">
             <img src="../img/jquery-horizontal.svg">
         </a>
-
+    
         <nav id="nav">
-
             <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
                 aria-expanded="false">
                 <span id="hamburguer"></span>
             </button>
-
+        
             <ul id="menu" role="menu">
                 <li><a href="../../index.html">Home </a> </li>
-                <li><a href="#">Quiz </a> </li>
+                <li><a href="../../assets/view/form.html">Quiz</a></li>
                 <li><a href="#">Pagina3 </a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <div class="wrapper">
@@ -40,22 +40,17 @@
                     <h3>Digite seu nome</h3>
                     <form>
                         <label>nickname</label>
-                        <input placeholder="nickname" type="text" name="nickname" required>
-                        <button>Jogar</button>
+                        <input placeholder="nickname" type="text" name="nickname" id="nickname" required>
                     </form>
+                    <button onclick="getUser(0)">Jogar</button>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <p>Desenvolvido por Alexandre, João Victor, João Leite, Harisson, Davidson</p>
-            <a href="https://github.com/Joao-vls/jquery_quizz" target="_blank">Link do repositório
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </footer>
+
+    <script src="../js/templates.js"></script>
     <script src="../js/script.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/quizz.css" />
+
+    <script src="../jquery/jquery-3.6.2.js"></script>
+
+    <title>jQuerry - Jogando...</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="../../index.html" class="logo">
+        <img src="../img/jquery-horizontal.svg">
+      </a>
+  
+      <nav id="nav">
+        <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+          aria-expanded="false">
+          <span id="hamburguer"></span>
+        </button>
+    
+        <ul id="menu" role="menu">
+          <li><a href="../../index.html">Home </a> </li>
+          <li><a href="../../assets/view/form.html">Quiz</a></li>
+          <li><a href="#">Pagina3 </a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content">
+        <h1>Pergunta de número <span id="number-of-question">0</span>:</h1>
+        <div class="question">
+          <form>
+            <p>O que é ?</p>
+
+            <label for="alternative-a">
+              <div class="alternative">
+                <input type="radio" name="alternative" id="alternative-a">Alternativa a
+              </div>
+            </label>
+            
+            <label for="alternative-b">
+              <div class="alternative">
+                <input type="radio" name="alternative" id="alternative-b">Alternativa b
+              </div>
+            </label>
+
+            <label for="alternative-c">
+              <div class="alternative">
+                <input type="radio" name="alternative" id="alternative-c">Alternativa c
+              </div>
+            </label>
+
+            <label for="alternative-d">
+              <div class="alternative">
+                <input type="radio" name="alternative" id="alternative-d">Alternativa d
+              </div>
+            </label>
+          </form>
+
+          <div class="button">
+            <button>Próxima questão</button>
+          </div>
+        </div>
+
+        
+      </section>
+
+      <section>
+        <div class="result"></div>
+      </section>
+    </main>
+
+    <script src="../js/templates.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

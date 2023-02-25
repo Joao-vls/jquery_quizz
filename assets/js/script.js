@@ -14,7 +14,6 @@ $("#btn-mobile").click((e) =>  {
         e.currentTarget.setAttribute('aria-label', 'abrir menu')
     }
 
-
 })
 
 //const btnMobile = document.getElementById('btn-mobile')

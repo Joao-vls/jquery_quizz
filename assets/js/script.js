@@ -1,5 +1,7 @@
+
 $("#btn-mobile").click((e) =>  {
 	if(e.type === 'touchstart') {
+		console.log("teste")
 		e.preventDefault();
 	}
 	

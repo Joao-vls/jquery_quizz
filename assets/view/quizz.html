@@ -20,13 +20,13 @@
       <a href="../../index.html" class="logo">
         <img src="../img/jquery-horizontal.svg">
       </a>
-  
+
       <nav id="nav">
         <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
           aria-expanded="false">
           <span id="hamburguer"></span>
         </button>
-    
+
         <ul id="menu" role="menu">
           <li><a href="../../index.html">Home </a> </li>
           <li><a href="../../assets/view/form.html">Quiz</a></li>
@@ -44,10 +44,10 @@
 
             <label for="alternative-a">
               <div class="alternative">
-                <input type="radio" name="alternative" id="alternative-a">Alternativa a
+                <input type="radio" name="alternative" id="alternative-a" value="a">Alternativa a
               </div>
             </label>
-            
+
             <label for="alternative-b">
               <div class="alternative">
                 <input type="radio" name="alternative" id="alternative-b">Alternativa b
@@ -62,17 +62,17 @@
 
             <label for="alternative-d">
               <div class="alternative">
-                <input type="radio" name="alternative" id="alternative-d">Alternativa d
+                <input type="radio" name="alternative" id="alternative-d" value="d">Alternativa d
               </div>
             </label>
           </form>
 
           <div class="button">
-            <button>Próxima questão</button>
+            <button id="next_question">Próxima questão</button>
           </div>
         </div>
 
-        
+
       </section>
 
       <section>
@@ -81,6 +81,8 @@
     </main>
 
     <script src="../js/templates.js"></script>
+    <script src="../js/questions.js"></script>
+
     <script src="../js/script.js"></script>
   </body>
 </html>

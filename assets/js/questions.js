@@ -9,39 +9,43 @@ let questions;
 
 //Chama nova pergunta e cria Div
 function getQuestion (idq){
-	$.ajax({
-		method: "GET",
-		url: "https://jquery-quizz-production.up.railway.app/answers?id="+idq,
-		dataType:"json",
-		success: function(data){
-			questions=data[0];
-			//console.log(questions.id);
-		}
-	});
+	try{
+		$.ajax({
+			method: "GET",
+			url: "http://localhost:3000/answers/"+idq,
+			dataType:"json",
+			success: function(data){
+				questions=data;
+				//console.log(questions.id);
+			},
+		});
+	}catch(error){
+		console.error(error);
+	}
 }
 
 //Confere resposta se correta add score
 function postScore (optionsCheck,idq){
 	$.ajax({
 		method: "GET",
-		url: "https://jquery-quizz-production.up.railway.app/answers?id="+idq,
+		url: "http://localhost:3000/answers/"+idq,
 		dataType:"json",
 		success: function(data){
-			if (data[0].correct_alternative==optionsCheck) {
+			if (data.correct_alternative==optionsCheck) {
 				$.ajax({
 					method: "GET",
-					url: "https://jquery-quizz-production.up.railway.app/users?id="+idu,
+					url: "http://localhost:3000/users/"+idu,
 					dataType:"json",
 					success: function(data){
 						console.log(data);
 						let dt={
-							score:data[0].score+1
+							score:parseInt(data.score)+1
 						}
 						$.ajax({
-							method: "PUT",
+							method: "PATCH",
 							contentType: "application/json",
 							data: JSON.stringify(dt),
-							url: "https://jquery-quizz-production.up.railway.app/users?id="+idu,
+							url: "http://localhost:3000/users/"+idu,
 							success: function(data){
 								console.log(data);
 							}

@@ -8,7 +8,7 @@ function setUser() {
     name: name,
     score: score
   }
-  $.post("https://jquery-quizz-production.up.railway.app/users", data,function(){
+  $.post("http://localhost:3000/users", data,function(){
     window.location.href="../view/quizz.html?id="+data.id;
   });
 }

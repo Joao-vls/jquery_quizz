@@ -86,7 +86,7 @@ function getQuestion (ques){
 					data: JSON.stringify(usuario),
 					url: "http://localhost:3000/users/"+usuario.id,
 					success: function(data){
-						window.location.href="../view/score.html";
+						window.location.href="../view/score.html?"+encodeURIComponent(usuario.id);
 					}
 				});
 			}

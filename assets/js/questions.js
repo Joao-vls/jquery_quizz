@@ -2,12 +2,21 @@ let param = new URLSearchParams(window.location.search);
 let usuario = JSON.parse(decodeURIComponent(param).slice(0,-1));
 
 let questions;
+
+//embaralha questao
+function shuffleArray(array) {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+	}
+	return array;
+}
 $.ajax({
 	method: "GET",
 	url: "http://localhost:3000/answers/",
 	dataType:"json",
 	success: function(data){
-		questions=data.reverse();
+		questions=shuffleArray(data);
 		getQuestion(questions[questions.length-1]);
 		//console.log(questions);
 	},

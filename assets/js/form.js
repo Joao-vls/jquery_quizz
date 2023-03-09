@@ -10,7 +10,7 @@ function setUser() {
   }
   $.post("http://localhost:3000/users", data,function(){
     var url="../view/quizz.html?"+encodeURIComponent(JSON.stringify(data));
-
+    
     window.location.href=url;
   });
 }

@@ -7,12 +7,50 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
+    <link rel="stylesheet" href="../css/score.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="../css/styles.css" />
     <script src="../jquery/jquery-3.6.2.js"></script>
     <title>jQuerry - Jogando...</title>
   </head>
 
   <body>
+    <header style="padding:10px;">
+        <a href="#" class="logo">
+            <img src="../img/jquery-horizontal.svg">
+        </a>
+
+        <nav id="nav">
+            <button aria-label="abrir menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburguer"></span>
+            </button>
+
+            <ul id="menu" role="menu">
+                <li><a href="./index.html">Home </a> </li>
+                <li><a href="./assets/view/form.html">Quiz</a></li>
+                <li><a href="#">Pagina3</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="result">
+
+    <h1>Resultados</h1>
+    <table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Score</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+    <button type="button" class="restart">Recomeçar</button>
     <script src="../js/score.js"></script>
+  </div>
+
   </body>
 </html>

@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+.result{
+  padding-top:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+h1{
+
+}
+.restart{
+  height: 2.7rem;
+  width: 100px;
+  color: white;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+thead {
+  background-color: blue;
+  color: white;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.you {
+  animation: youani 1.5s infinite;
+}
+
+@keyframes youani {
+  0% {
+    background-color: white;
+  }
+  50% {
+    background-color: blue;
+    color: white;
+  }
+  100% {
+    background-color: white;
+  }
+}

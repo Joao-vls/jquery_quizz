@@ -36,7 +36,7 @@ main {
   color: #f8f8f2;
   background-color: #324cda;
 
-  height: 3rem;
+  min-height:3rem;
   padding: 1% 2%;
   margin-bottom: 5px;
 

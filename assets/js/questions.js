@@ -35,45 +35,50 @@ $.ajax({
 //Cria Div pergunta
 function getQuestion (ques){
 	console.log(ques);
+	 $('#number-of-question').text(10-(questions.length-1));
 	let form=$(`<form>
 		<p>`+ques.question+`</p>
 
 		<label for="alternative-a">
 		<div class="alternative">
-		<input type="radio" name="alternative" id="alternative-a" value=`+ques.alternative[0]+`>`+ques.alternative[0]+`
+		<input type="radio" name="alternative" id="alternative-a" >`+ques.alternatives[0]+`
 		</div>
 		</label>
 
 		<label for="alternative-b">
 		<div class="alternative">
-		<input type="radio" name="alternative" id="alternative-b" value=`+ques.alternative[1]+`>`+ques.alternative[1]+`
+		<input type="radio" name="alternative" id="alternative-b" >`+ques.alternatives[1]+`
 		</div>
 		</label>
 
 		<label for="alternative-c">
 		<div class="alternative">
-		<input type="radio" name="alternative" id="alternative-c" value=`+ques.alternative[2]+`>`+ques.alternative[2]+`
+		<input type="radio" name="alternative" id="alternative-c" >`+ques.alternatives[2]+`
 		</div>
 		</label>
 
 		<label for="alternative-d">
 		<div class="alternative">
-		<input type="radio" name="alternative" id="alternative-d" value=`+ques.alternative[3]+`>`+ques.alternative[3]+`
+		<input type="radio" name="alternative" id="alternative-d" >`+ques.alternatives[3]+`
 		</div>
 		</label>
 		</form>
 		`);
 		$(".question .button").before(form);
+		$(".content").effect( "slide", 430);
 	}
 	//Confere resposta se correta add score
 
 	$("#next_question").click(()=>{
-		var optionsCheck = $('form input[name="alternative"]')?.filter(':checked')?.val();
+		var optionsCheck = $('form input[name="alternative"]')?.filter(':checked')?.parent()?.text()?.trim();
+		//console.log($('form input[name="alternative"]')?.filter(':checked'));
+		console.log(optionsCheck,questions[questions.length-1].alternatives[questions[questions.length-1].correct_alternative]);
 		if (optionsCheck?.length) {
 			console.log(optionsCheck);
-			if (questions[questions.length-1].correct_alternative==optionsCheck) {
+			if (questions[questions.length-1].alternatives[questions[questions.length-1].correct_alternative]==optionsCheck) {
 				//questions[questions.length-1].id;
 				usuario.score+=1;
+				console.log(usuario.score);
 			}
 			$(".question form").remove();
 			questions.pop();

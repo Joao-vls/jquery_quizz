@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-  $('#drop-drag').click(() => {
+  $('#drop-drag-btn').click(() => {
     $('#resource').html(`
       <div id="draggable" class="ui-widget-content">
         <p>Arraste e solte no bloco ao lado</p>
@@ -22,9 +22,19 @@ $(document).ready(() => {
     });
   })
 
-  $('#carousel').click(() => {
+  $('#sortable-btn').click(() => {
     $('#resource').html(`
-      r2
+      <ul id="sortable">
+        <li class="ui-state-default">Item 1</li>
+        <li class="ui-state-default">Item 2</li>
+        <li class="ui-state-default">Item 3</li>
+        <li class="ui-state-default">Item 4</li>
+        <li class="ui-state-default">Item 5</li>
+        <li class="ui-state-default">Item 6</li>
+        <li class="ui-state-default">Item 7</li>
+      </ul>
     `)
+
+    $("#sortable").sortable();
   })
 })

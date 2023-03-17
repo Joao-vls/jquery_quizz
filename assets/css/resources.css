@@ -22,11 +22,12 @@
 
 .resources-buttons div {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .resources-buttons button {
-  width: 15%;
+  min-width: 15%;
+  max-width: 15%;
   padding: 1.5%;
 
   color: #f8f8f2;
@@ -55,7 +56,7 @@
   border: 1px solid #cacaca;
 }
 
-/* Bloco de drop and drag */
+/* Recurso drag and drop */
 #draggable {
   width: 30%;
   height: 30%;
@@ -74,4 +75,25 @@
   height: 40%;
   float: left;
   margin: 10px;
+}
+
+/* Recurso sortable */
+#sortable {
+  list-style-type: none;
+  width: 15rem;
+}
+
+#sortable li {
+  padding: 3% 0;
+  text-align: center;
+  font-size: 18px;
+
+  height: 3rem;
+  margin-bottom: 2%;
+
+  cursor: pointer;
+}
+
+#sortable li:active {
+  background-color: #45738890;
 }

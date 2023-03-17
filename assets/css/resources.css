@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
+
+  min-height: 100vh;
+  width: 100%;
+
+  color: #24335a;
+}
+
+.resources {
+  min-width: 80%;
+  margin-top: 7rem;
+  padding: 1.5% 0;
+
+  border-radius: 7px;
+  border: 1px solid #cacaca;
+
+  background-color: #e9e9e980;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.resources div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.resources button {
+  width: 15%;
+  padding: 1%;
+
+  color: #f8f8f2;
+  background-color: #485bc5;
+
+  border: none;
+  border-radius: 7px;
+
+  cursor: pointer;
+}
+
+.resources button:hover {
+  background-color: #345096;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}

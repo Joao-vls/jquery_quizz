@@ -13,7 +13,7 @@ function shuffleArray(array) {
 }
 $.ajax({
 	method: "GET",
-	url: "http://localhost:3000/answers/",
+	url: "https://jquery-quizz-production.up.railway.app/answers/",
 	dataType:"json",
 	success: function(data){
 		questions=shuffleArray(data);
@@ -77,7 +77,7 @@ function getQuestion (ques){
 			console.log(optionsCheck);
 			if (questions[questions.length-1].alternatives[questions[questions.length-1].correct_alternative]==optionsCheck) {
 				//questions[questions.length-1].id;
-				usuario.score+=1;
+				usuario.score+=10;
 				console.log(usuario.score);
 			}
 			$(".question form").remove();
@@ -89,7 +89,7 @@ function getQuestion (ques){
 					method: "PATCH",
 					contentType: "application/json",
 					data: JSON.stringify(usuario),
-					url: "http://localhost:3000/users/"+usuario.id,
+					url: "https://jquery-quizz-production.up.railway.app/users/"+usuario.id,
 					success: function(data){
 						window.location.href="../view/score.html?"+encodeURIComponent(usuario.id);
 					}

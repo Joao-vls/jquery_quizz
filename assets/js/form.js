@@ -8,7 +8,7 @@ function setUser() {
     name: name,
     score: score
   }
-  $.post("http://localhost:3000/users", data,function(){
+  $.post("https://jquery-quizz-production.up.railway.app/users", data,function(){
     var url="../view/quizz.html?"+encodeURIComponent(JSON.stringify(data));
     
     window.location.href=url;

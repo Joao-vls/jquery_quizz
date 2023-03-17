@@ -3,7 +3,7 @@ let id = decodeURIComponent(param).slice(0,-1);
 $.ajax({
   method: "GET",
   contentType: "application/json",
-  url: "http://localhost:3000/users",
+  url: "https://jquery-quizz-production.up.railway.app/users",
   success: function(data){
     console.log(data);
     getScore(data);
@@ -26,5 +26,5 @@ function getScore(data){
 
   }
   $(".restart").click(()=>{
-    window.location.href="../../index.html";
+    window.location.href="../view/form.html";
   });

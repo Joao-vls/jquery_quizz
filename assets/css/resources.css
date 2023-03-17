@@ -1,7 +1,6 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: 2%;
 
   min-height: 100vh;
   width: 100%;
@@ -9,9 +8,9 @@
   color: #24335a;
 }
 
-.resources {
+.resources-buttons {
   min-width: 80%;
-  margin-top: 7rem;
+  margin-top: 6rem;
   padding: 1.5% 0;
 
   border-radius: 7px;
@@ -21,14 +20,14 @@
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.resources div {
+.resources-buttons div {
   display: flex;
   justify-content: space-around;
 }
 
-.resources button {
+.resources-buttons button {
   width: 15%;
-  padding: 1%;
+  padding: 1.5%;
 
   color: #f8f8f2;
   background-color: #485bc5;
@@ -39,7 +38,40 @@
   cursor: pointer;
 }
 
-.resources button:hover {
+.resources-buttons button:hover {
   background-color: #345096;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.resources-box {
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+  min-width: 80%;
+  margin: 1rem 0;
+  padding: 1.5% 0;
+
+  border-radius: 3px;
+  border: 1px solid #cacaca;
+}
+
+/* Bloco de drop and drag */
+#draggable {
+  width: 30%;
+  height: 30%;
+  padding: 1%;
+  float: left;
+  margin: 10px 10px 10px 0;
+
+  color: #f8f8f2;
+  background-color: #757fbd;
+
+  cursor: pointer;
+}
+
+#droppable {
+  width: 40%;
+  height: 40%;
+  float: left;
+  margin: 10px;
 }

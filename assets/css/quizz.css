@@ -21,7 +21,7 @@ main {
   border: 1px solid #6b6b6b90;
   border-radius: 1rem;
 
-  background-color: #d5f8f870;
+  background-color: #e7e7e7;
 }
 
 .question p {
@@ -34,7 +34,7 @@ main {
 
 .alternative {
   color: #f8f8f2;
-  background-color: #324cda;
+  background-color: #3a436e;
 
   min-height:3rem;
   padding: 1% 2%;
@@ -48,7 +48,7 @@ main {
 }
 
 .alternative:hover {
-  background-color: #000e5a;
+  background-color: #14299b99;
   transform: scale(1.003);
 }
 
@@ -108,6 +108,10 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .alternative input[type="radio"] {
+    -webkit-appearance: radio;
   }
 
   .button button{

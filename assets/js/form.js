@@ -1,19 +1,20 @@
-function getUser(id) {
-  $.get("https://jquery-quizz-production.up.railway.app/users", {id: id}, function(data){
-    console.log(data[parseInt(id)].score)
-  });
-}
-
 function setUser() {
-  const id = 5;
+  const id = Math.random().toString(36).substr(2, 9);
   const name = $("#nickname").val();
-  let score = 150;
-  
+  let score = 0;
+
   const data = {
     id: id,
     name: name,
     score: score
   }
-
-  $.post("https://jquery-quizz-production.up.railway.app/users", data);
+  $.post("https://jquery-quizz-production.up.railway.app/users", data,function(){
+    var url="../view/quizz.html?"+encodeURIComponent(JSON.stringify(data));
+    
+    window.location.href=url;
+  });
 }
+
+$("#play_quizz").click(()=>{
+  setUser();
+});

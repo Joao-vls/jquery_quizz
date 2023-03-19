@@ -28,8 +28,7 @@ function getScore(data){
     var tr=$(` <tr `+cls+`>
 
       <td>`+inject(data[i].name)+`</td>
-
-      <td>`+data[i].name+`</td>
+      
       <td>`+data[i].score+`</td>
       </tr>
       `);

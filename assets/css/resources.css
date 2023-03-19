@@ -52,6 +52,9 @@
   margin: 1rem 0;
   padding: 1.5% 0;
 
+  background-color: rgb(245 245 245);
+
+
   border-radius: 3px;
   border: 1px solid #cacaca;
 }
@@ -97,3 +100,27 @@
 #sortable li:active {
   background-color: #45738890;
 }
+
+
+.slick-prev:before, .slick-next:before{
+    color:red;
+}
+
+.carousel {
+  margin: 0 auto;
+  width: 350px;
+}
+
+.carousel img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#tabs {
+  width: 600px;
+}
+
+#accordion {
+  width: 600px;
+}
+

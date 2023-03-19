@@ -1,4 +1,3 @@
-
 $(document).ready(() => {
 
   $('#drop-drag-btn').click(() => {
@@ -21,8 +20,12 @@ $(document).ready(() => {
             .html("Ok!!")
       }
     });
+
   
     $('#sortable-btn').click(() => {
+  })
+
+  $('#sortable-btn').click(() => {
     $('#resource').html(`
       <ul id="sortable">
         <li class="ui-state-default">Item 1</li>

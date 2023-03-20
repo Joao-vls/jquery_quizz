@@ -1,5 +1,7 @@
 $(document).ready(() => {
 
+  $( "#dialog" ).dialog();
+
   $('#drop-drag-btn').click(() => {
     $('#resource').html(`
       <div id="draggable" class="ui-widget-content">

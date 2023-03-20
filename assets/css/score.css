@@ -10,19 +10,25 @@
   min-height: 100vh;
 }
 
-.restart{
+.restart {
   height: 2.7rem;
-  width: 100px;
+  width: 15%;
+  margin: 3% 0;
   color: white;
   background-color: blue;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart:hover {
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 table {
   border-collapse: collapse;
   width: 45%;
-  margin-bottom: 1%;
 
   border: 1px solid #f1f1f1;
 }

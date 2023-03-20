@@ -45,12 +45,12 @@ $(document).ready(() => {
 $('#carousel').click(() => {
     $('#resource').html(`
         <div class="carousel">
-          <div><img src="https://i.imgur.com/3aIutJi.png" alt="js" /></div>
-          <div><img src="https://i.imgur.com/rWtGeQ0.png" alt="java" /></div>
-          <div><img src="https://i.imgur.com/8946bSF.png" alt="python"/></div>
-          <div><img src="https://i.imgur.com/eQoyQjy.png" alt="C#" /></div>
-          <div><img src="https://i.imgur.com/ko3iAbu.png" alt="PHP" /></div>
-          <div><img src="https://i.imgur.com/Afkz5od.png" alt="dotnet" /></div>
+          <div><img src="../img/3aIutJi.png" alt="js" /></div>
+          <div><img src="../img/rWtGeQ0.png" alt="java" /></div>
+          <div><img src="../img/8946bSF.png" alt="python"/></div>
+          <div><img src="../img/eQoyQjy.png" alt="C#" /></div>
+          <div><img src="../img/ko3iAbu.png" alt="PHP" /></div>
+          <div><img src="../img/Afkz5od.png" alt="dotnet" /></div>
         </div>
     `)
 
@@ -58,7 +58,6 @@ $('#carousel').click(() => {
      dots: true,
      autoplay: true,
      autoplaySpeed: 2500,
-
    })
 })
 
@@ -139,7 +138,7 @@ $('#accordion-btn').click(() => {
     `)
 
    $("#accordion").accordion({
-        collapsible: true
+      collapsible: true
    })
 })
 

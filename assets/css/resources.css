@@ -101,26 +101,29 @@
   background-color: #45738890;
 }
 
-
-.slick-prev:before, .slick-next:before{
-    color:red;
+/* Recurso carousel */
+.slick-prev.slick-arrow:before, .slick-next.slick-arrow:before{
+  color: #1f2066;
 }
 
 .carousel {
   margin: 0 auto;
-  width: 350px;
+  height: 320px;
+  width: 320px;
 }
 
 .carousel img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
+/* Recurso tabs */
 #tabs {
   width: 600px;
 }
 
+/* Recurso accordion */
 #accordion {
   width: 600px;
 }
-

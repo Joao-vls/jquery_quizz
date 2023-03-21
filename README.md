@@ -2,7 +2,7 @@
 
 ##  Sobre o Projeto
 
-Esta apresentação faz parte de uma atividade de cunho avaliativo para a disciplina de Desenvolvimento Web, cujo objetivo é apresentar o framework jQuery bem como mostrar seu funcionamento e como se dá seu uso.
+Este projeto faz parte de uma atividade de cunho avaliativo para a disciplina de Desenvolvimento Web, cujo objetivo é apresentar o framework jQuery bem como mostrar seu funcionamento e como se dá seu uso.
 
 ### Tecnologias
 <p display="inline-block">

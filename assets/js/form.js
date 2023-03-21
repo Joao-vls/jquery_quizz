@@ -15,6 +15,25 @@ function setUser() {
   });
 }
 
-$("#play_quizz").click(()=>{
-  setUser();
+
+function validateInput(e) {
+  e.preventDefault()
+  
+  if ($("#nickname").val().trim().length > 0) {
+    $("#nickname").removeClass('error');
+    
+    setUser();
+ 
+  } else {
+ 
+     $("#nickname").addClass('error')
+  }
+
+
+}
+
+$("#play_quizz").click((e)=>{
+  
+  validateInput(e);
+
 });

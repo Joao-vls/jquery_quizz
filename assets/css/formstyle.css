@@ -63,6 +63,14 @@ input {
 	outline: 0;
 }
 
+input.error {
+	border: 1px solid red;
+}
+
+input.error::placeholder {
+	color: red;
+}
+
 input:focus {
 	border: 2px solid #4b4b4b;
 }
